@@ -32,7 +32,15 @@ exports.create = (req, res) => {
 
 //retrieve all drivers from db
 exports.findAll = (req, res) => {
-
+Driver.find()
+      .then(data => {
+        res.send(data);
+      })
+      .catch (err => {
+        res.status(500).send({
+            message: err.message || "Some error occured"
+        });
+      });
 };
 
 //update a driver
