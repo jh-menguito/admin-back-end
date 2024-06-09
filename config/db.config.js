@@ -1,3 +1,3 @@
 module.exports = {
-    url: "mongodb://localhost:27017/admin-bgc"
+    url: "mongodb+srv://janeleslieromano:anqyPYlPE2S5eIQ3@cluster0001.azsuek6.mongodb.net/"
 }
