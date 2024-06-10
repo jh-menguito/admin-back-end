@@ -21,6 +21,7 @@ exports.create = (req, res) => {
           .save(driver)
           .then(data => {
             res.send(data);
+            console.log(data);
           })
           .catch (err => {
             res.status(500).send({
@@ -28,6 +29,7 @@ exports.create = (req, res) => {
                         err.message || "error occured while creating the driver"
             });
           });
+          
 };
 
 //retrieve all drivers from db
